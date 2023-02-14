@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.26.5
+%define		kdeplasmaver	5.27.0
 %define		qtver		5.15.2
 %define		kpname		plasma-bigscreen
 %define		kf5ver		5.39.0
 
 Summary:	plasma-bigscreen
 Name:		kp5-%{kpname}
-Version:	5.26.5
+Version:	5.27.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	116e7d1a64ee17d5a31aed066709725a
+# Source0-md5:	d999bfcd04850918c9a5484f4259910e
 URL:		https://kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.0
 BuildRequires:	Qt5DBus-devel
@@ -127,8 +127,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kpackage/kcms/kcm_mediacenter_audiodevice/contents/ui/main.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_audiodevice/contents/ui/views/RowLabelView.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_audiodevice/contents/ui/views/TileView.qml
-%{_datadir}/kpackage/kcms/kcm_mediacenter_audiodevice/metadata.desktop
-%{_datadir}/kpackage/kcms/kcm_mediacenter_audiodevice/metadata.json
 %{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/contents/ui/DeviceTimeSettings.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/contents/ui/delegates/DatePicker.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/contents/ui/delegates/Digit.qml
@@ -141,8 +139,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/contents/ui/images/green-tick-thick.svg
 %{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/contents/ui/images/green-tick.svg
 %{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/contents/ui/main.qml
-%{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/metadata.desktop
-%{_datadir}/kpackage/kcms/kcm_mediacenter_bigscreen_settings/metadata.json
 %{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/contents/ui/DeviceConnectionView.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/contents/ui/delegates/DeviceDelegate.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/contents/ui/delegates/PairRequest.qml
@@ -152,8 +148,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/contents/ui/images/green-tick-thick.svg
 %{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/contents/ui/images/green-tick.svg
 %{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/contents/ui/main.qml
-%{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/metadata.desktop
-%{_datadir}/kpackage/kcms/kcm_mediacenter_kdeconnect/metadata.json
 %{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/contents/ui/DetailsText.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/contents/ui/DeviceConnectionItem.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/contents/ui/NetworkItem.qml
@@ -163,12 +157,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/contents/ui/images/green-tick.svg
 %{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/contents/ui/main.qml
 %{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/contents/ui/views/RowLabelView.qml
-%{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/metadata.desktop
-%{_datadir}/kpackage/kcms/kcm_mediacenter_wifi/metadata.json
-%{_datadir}/kservices5/bigscreensettings.desktop
-%{_datadir}/kservices5/kcm_mediacenter_audiodevice.desktop
-%{_datadir}/kservices5/mediacenter_kdeconnect.desktop
-%{_datadir}/kservices5/mediacenter_wifi.desktop
 %{_datadir}/kservices5/plasma-applet-org.kde.mycroft.bigscreen.homescreen.desktop
 %{_datadir}/kservices5/plasma-applet-org.kde.plasma.mycroft.bigscreen.desktop
 %{_datadir}/kservices5/plasma-lookandfeel-org.kde.plasma.mycroft.bigscreen.desktop
