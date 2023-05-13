@@ -9,7 +9,7 @@
 Summary:	plasma-bigscreen
 Name:		kp5-%{kpname}
 Version:	5.27.5
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
@@ -231,6 +231,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/plasma/plasmoids/org.kde.mycroft.bigscreen.homescreen/contents/ui/indicators/Shutdown.qml
 %{_datadir}/plasma/plasmoids/org.kde.mycroft.bigscreen.homescreen/contents/ui/indicators/Volume.qml
 %{_datadir}/plasma/plasmoids/org.kde.mycroft.bigscreen.homescreen/contents/ui/indicators/Wifi.qml
+%dir %{_datadir}/plasma/plasmoids/org.kde.mycroft.bigscreen.homescreen/contents/ui/indicators/code
 %{_datadir}/plasma/plasmoids/org.kde.mycroft.bigscreen.homescreen/contents/ui/indicators/code/icon.js
 %dir %{_datadir}/plasma/plasmoids/org.kde.mycroft.bigscreen.homescreen/contents/ui/launcher
 %{_datadir}/plasma/plasmoids/org.kde.mycroft.bigscreen.homescreen/contents/ui/launcher/FeedbackWindow.qml
